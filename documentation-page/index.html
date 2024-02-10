@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="https://animecharacters.sirv.com/Favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+  <title>Documentação da API de Personagens de Animes</title>
+
+</head>
+
+<body>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #1a1a1a, #121212); /* Gradiente escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Roboto', sans-serif; /* Fonte do Google 'Roboto' */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffcc00; /* Amarelo para os títulos */
+    padding: 20px 15px 10px 25px;
+}
+
+h2 {
+    border-bottom: 2px solid #ffcc00; /* Linha amarela sob os subtítulos */
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0 10px 20px;
+}
+
+.endpoints-title {
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.method {
+    font-size: 1.2rem;
+    color: #d7cd80;
+    margin-left: 3px;
+}
+
+.example {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.example-title {
+    margin-bottom: 5px;
+}
+
+.base-endpoint {
+    font-size: 1.1rem;
+    margin-left: 3px;
+}
+
+.pre-code {
+    background-color: #2a2a2a;
+    color: #ffffff; 
+    padding: 5px 50px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    line-height: 0.92;
+}
+
+.last-p {
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #202020;
+}
+</style>
+
+  <h1>Documentação da API - Personagens de Animes</h1>
+
+  <h2>Introdução</h2>
+  <p>Bem-vindo à API de Personagens de Animes! Esta API fornece informações e imagens de personagens de dois animes
+    populares: Dragon Ball e Naruto.</p>
+
+  <h2>Base URL</h2>
+  <p>A URL base para todos os endpoints é <code class="base-endpoint">https://anime-characters-backend.vercel.app/</code></p>
+
+  <h2>Endpoints Disponíveis</h2>
+
+  <h3>1. <code class="endpoints-title">/characters-dragonball</code></h3>
+  <p>Retorna informações e imagens dos personagens do anime Dragon Ball.</p>
+
+  <h4>Método: <code class="method">GET</code></h4>
+
+  <h4 class="example-title">Exemplo de Uso</h4>
+  <pre><code class="example">https://anime-characters-backend.vercel.app/characters-dragonball</code></pre>
+
+  <h4>Resposta Exemplo</h4>
+
+  <pre class="pre-code"><code>
+    {<br>
+      characters: [<br>
+          {<br>
+              id: 1,<br>
+              name: 'Goku',<br>
+              profile_img: 'https://animecharacters.sirv.com/Goku/Goku-profile.jpg',<br>
+              resume: 'A história de Goku começa quando ele....',<br>
+              resume_img: 'https://animecharacters.sirv.com/Goku/Goku-resume.jpg',<br>
+              additional: {<br>
+                  father: 'Bardock',<br>
+                  mother: 'Gine',<br>
+                  power: 'Kamehameha',<br>
+                  more: 'Instinto Superior'<br>
+              },<br>
+              extras: [<br>
+                  {<br>
+                      name: 'Nuvem Voadora',<br>
+                      text: 'A Nuvem Voadora é uma relíquia....',<br>
+                      image: 'https://animecharacters.sirv.com/Goku/Goku-nuvem-voadora.jpg'<br>
+                  },<br>
+                  // Mais informações extras e em seguida mais personagens <br> }]}
+</code></pre>
+
+  <h3>2. <code class="endpoints-title">/characters-naruto</code></h3>
+  <p>Retorna informações e imagens dos personagens do anime Naruto.</p>
+
+  <h4>Método: <code class="method">GET</code></h4>
+
+  <h4 class="example-title">Exemplo de Uso</h4>
+  <pre><code class="example">https://anime-characters-backend.vercel.app/characters-naruto</code></pre>
+
+  <h4>Resposta Exemplo</h4>
+  <pre class="pre-code"><code>
+    {<br>
+      characters: [<br>
+          {<br>
+              id: 1,<br>
+              name: 'Uzumaki Naruto',<br>
+              profile_img: 'https://animecharacters.sirv.com/Naruto/Uzumaki%20Naruto%20Profile.jpg',<br>
+              resume: 'Naruto, um ninja da Vila da Folha....',<br>
+              resume_img: 'https://animecharacters.sirv.com/Naruto/Naruto%20shippuden.jpg',<br>
+              village: 'Vila da Folha',<br>
+              additional: {<br>
+                  father: 'Namikaze Minato',<br>
+                  mother: 'Uzumaki Kushina',<br>
+                  jutsu: 'Rasenshuriken',<br>
+                  more: 'Jinchuriki Kurama'<br>
+              },<br>
+              extras: [<br>
+                  {<br>
+                      name: 'Modo Sennin',<br>
+                      text: 'O Modo Sábio, ou Modo Sennin....',<br>
+                      image: 'https://animecharacters.sirv.com/Naruto/Uzumaki%20Naruto%20Modo%20Senin.jpg'<br>
+                  },<br>
+                  // Mais informações extras e em seguida mais personagens <br> }]}
+</code>
+</pre>
+
+  <h2>Considerações Finais</h2>
+  <p>Utilize esses endpoints para obter informações e imagens de seus personagens favoritos dos animes Dragon Ball e
+    Naruto. Certifique-se de fazer solicitações no método <code>GET</code> para receber os dados desejados.</p>
+
+  <p>Lembre-se de verificar a resposta exemplo para entender o formato dos dados retornados.</p>
+
+  <p class="last-p">Divirta-se explorando os personagens!</p>
+
+  <footer>
+    Desenvolvido com ❤️ por Willian D. Daniel
+  </footer>
+
+</body>
+
+</html>
