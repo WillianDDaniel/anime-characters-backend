@@ -7,7 +7,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "Willian Daniel",
