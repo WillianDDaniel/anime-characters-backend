@@ -14,6 +14,11 @@ const charactersDrangonBall = {
             },
             extras: [
                 {
+                    name: 'Super Saiyajin Blue',
+                    text: 'Goku na forma Super Saiyajin Blue, ou Super Saiyajin Deus Super Saiyajin, é uma fusão da energia divina do Super Saiyajin Deus com o Super Saiyajin, concedendo poder inigualável, velocidade e controle aprimorado, usado para enfrentar ameaças cósmicas em "Dragon Ball".',
+                    image: 'https://animecharacters.sirv.com/Goku/goku-ss-blue.jpg'
+                },
+                {
                     name: 'Nuvem Voadora',
                     text: 'A Nuvem Voadora é uma relíquia sagrada de "Dragon Ball", permitindo a quem é puro de coração voar rapidamente. Goku a utiliza em suas aventuras, sendo uma ferramenta confiável para alcançar lugares inacessíveis e escapar de perigos, refletindo sua pureza e bondade.',
                     image: 'https://animecharacters.sirv.com/Goku/Goku-nuvem-voadora.jpg'
@@ -29,9 +34,19 @@ const charactersDrangonBall = {
                     image: 'https://animecharacters.sirv.com/Goku/Goku-sayajin-4.jpeg'
                 },
                 {
-                    name: 'Super Saiyajin Blue',
-                    text: 'Goku na forma Super Saiyajin Blue, ou Super Saiyajin Deus Super Saiyajin, é uma fusão da energia divina do Super Saiyajin Deus com o Super Saiyajin, concedendo poder inigualável, velocidade e controle aprimorado, usado para enfrentar ameaças cósmicas em "Dragon Ball".',
-                    image: 'https://animecharacters.sirv.com/Goku/goku-ss-blue.jpg'
+                    name: 'Super Saiyajin Deus',
+                    text: 'Goku Deus Saiyajin, também conhecido como Super Saiyajin Deus, é uma forma poderosa alcançada por Goku em Dragon Ball. Ao absorver a energia dos seus amigos, ele ascende a esse nível, obtendo um visual mais elegante com cabelos vermelhos e uma aura divina.',
+                    image: 'https://animecharacters.sirv.com/Goku/goku-deus-super-saiyajin.jpg'
+                },
+                {
+                    name: 'Kaioken x20',
+                    text: 'Goku utiliza a técnica Kaioken para multiplicar sua força em 20 vezes durante batalhas intensas. Essa sobreposição aumentada de poder é uma estratégia arriscada, colocando uma pressão extrema em seu corpo. A aura vermelha intensa o envolve, destacando sua imensa velocidade e força.',
+                    image: 'https://animecharacters.sirv.com/Goku/goku_super_saiyan_blue_kaioken.jpg'
+                },
+                {
+                    name: 'Instinto Superior',
+                    text: 'Goku Instinto Superior, é uma forma transcendental alcançada em situações críticas. Seu corpo reage automaticamente, atingindo um estado de combate supremo. Goku, envolto em uma aura prateada, exibe movimentos incrivelmente rápidos e ataques intuitivos.',
+                    image: 'https://animecharacters.sirv.com/Goku/goku-Instinto-superior.jpg'
                 }
             ]
         },
@@ -72,6 +87,16 @@ const charactersDrangonBall = {
                     name: 'Vegeta Blue',
                     text: 'Vegeta Blue é a fusão do poder do Super Saiyajin Blue com a determinação de Vegeta. Ele alcança essa forma através da intensa busca por poder e superação, combinando habilidades Saiyajin com energia divina para proteger sua família e alcançar novos patamares de força.',
                     image: 'https://animecharacters.sirv.com/Vegeta/Vegeta-saiyajin-blue.gif'
+                },
+                {
+                    name: 'Ego Superior',
+                    text: 'Ego Superior é uma forma de transcendência atingida em momentos críticos. Nesse estado, sua confiança e autoconfiança atingem o ápice, amplificando poder e habilidades. Vegeta, envolto em uma aura intensa, demonstra uma determinação inabalável, superando limites.',
+                    image: 'https://animecharacters.sirv.com/Vegeta/maxresdefault.jpg'
+                },
+                {
+                    name: 'Super Saiyajin Deus',
+                    text: 'Super Saiyajin Deus, é uma forma divina alcançada por Vegeta. Sua aura vermelha distintiva e olhos prateados indicam a amplificação massiva de poder. Essa transformação divina concede força, velocidade e habilidades aumentadas, rivalizando com ameaças cósmicas.',
+                    image: 'https://animecharacters.sirv.com/Vegeta/vegeta-super-saiyajin-god.jpg'
                 }
             ]
         },
@@ -101,7 +126,7 @@ const charactersDrangonBall = {
                 {
                     name: 'Piccolo Daimaoh Futuro',
                     text: 'Piccolo tem um clone maligno, Piccolo Daimaoh Futuro, e sua linhagem influenciou outros personagens na série. Ele aprendeu a voar sozinho e é um mestre na técnica Fusão Namekuseijin. Adota a técnica Mafuba e, apesar da aparência severa, mostra um lado paterno e humorístico.',
-                    image: 'https://animecharacters.sirv.com/Piccolo/picollo-moon.jpg'
+                    image: 'https://animecharacters.sirv.com/Piccolo/picollo-21.jpg'
                 }
             ]
         },
