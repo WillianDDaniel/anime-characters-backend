@@ -4,31 +4,34 @@ const cors = require('cors')
 const fs = require('fs')
 const port = process.env.PORT || 3001
 
+// instance to characters database as object, that will to be converted in json
 const charactersNaruto = require('./CharacteresDB/charactersNaruto')
 const charactersDragonBall = require('./CharacteresDB/charactersDragonBall')
 
 app.use(cors())
 
 app.get('/', (req, res) => {
-  // Caminho para o arquivo HTML separado
+  // Path to html file -- Doc page --
   const filePath = __dirname + '/documentation-page/index.html'
 
-  // Lê o conteúdo do arquivo
+  // Read the file and convert
   fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
           console.error('Erro ao ler o arquivo HTML:', err)
           return res.status(500).send('Erro interno do servidor')
       }
 
-      // Envia o conteúdo HTML como resposta
+      // Send html as response, to make doc page
       res.send(data)
   })
 })
 
+// endpoint to Naruto characters
 app.get('/characters-naruto', (req, res) => {
   res.json(charactersNaruto)
 })
 
+// endpoint to Dragon Ball characters
 app.get('/characters-dragonball', (req, res) => {
   res.json(charactersDragonBall)
 })
