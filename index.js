@@ -1,39 +1,39 @@
-const express = require('express'); // importing express module
-const app = express(); // creating an instance of express app
-const cors = require('cors'); // importing cors module
-const fs = require('fs'); // importing file system module
-const port = process.env.PORT || 3001; // setting the port number
+const express = require('express')
+const app = express()
+const cors = require('cors')
+const fs = require('fs')
+const port = process.env.PORT || 3001
 
-// importing character data for Naruto and Dragon Ball
-const charactersNaruto = require('./CharacteresDB/charactersNaruto');
-const charactersDragonBall = require('./CharacteresDB/charactersDragonBall');
+// instance to characters database as object, that will to be converted in json
+const charactersNaruto = require('./CharacteresDB/charactersNaruto')
+const charactersDragonBall = require('./CharacteresDB/charactersDragonBall')
 
-// enabling CORS
-app.use(cors());
+app.use(cors())
 
-// root endpoint to serve documentation page
 app.get('/', (req, res) => {
-  const filePath = __dirname + '/documentation-page/index.html'; // path to html file
+  // Path to html file -- Doc page --
+  const filePath = __dirname + '/documentation-page/index.html'
 
+  // Read the file and convert
   fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading HTML file:', err); // logging error if any
-      return res.status(500).send('Internal Server Error');
-    }
+      if (err) {
+          console.error('Erro ao ler o arquivo HTML:', err)
+          return res.status(500).send('Erro interno do servidor')
+      }
 
-    res.send(data); // sending html as response
-  });
-});
+      // Send html as response, to make doc page
+      res.send(data)
+  })
+})
 
-// endpoint to fetch character data for Naruto
+// endpoint to Naruto characters
 app.get('/characters-naruto', (req, res) => {
-  res.json(charactersNaruto); // sending character data as json
-});
+  res.json(charactersNaruto)
+})
 
-// endpoint to fetch character data for Dragon Ball
+// endpoint to Dragon Ball characters
 app.get('/characters-dragonball', (req, res) => {
-  res.json(charactersDragonBall); // sending character data as json
-});
+  res.json(charactersDragonBall)
+})
 
-// starting the server on specified port
-app.listen(port, () => console.log(`Example app listening on port ${port}! http://localhost:${port}/`));
+app.listen(port, () => console.log(`Example app listening on port ${port}! http://localhost:${port}/`))
